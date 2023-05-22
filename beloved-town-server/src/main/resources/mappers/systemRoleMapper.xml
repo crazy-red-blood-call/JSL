@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件，映射到对应的SQL接口 -->
+<mapper namespace="com.antlord.mapper.SystemRoleMapper">
+	
+    <insert id="addSystemRole">
+        insert into system_role(
+                code,
+                create_by,
+                full_name,
+                name,
+                remark,
+                update_by)
+        value (
+                #{code},
+                #{createBy},
+                #{fullName},
+                #{name},
+                #{remark},
+                #{updateBy}
+        )
+    </insert>
+
+    <select id="getSystemRoleList" resultType="com.antlord.entity.SystemRole">
+        SELECT
+                code,
+                create_by,
+                create_time,
+                delete_flag,
+                full_name,
+                id,
+                manager,
+                name,
+                remark,
+                sort,
+                status,
+                update_by,
+                update_time
+        from system_role
+        <where>
+            and delete_flag = 0
+            <if test = "code != null and code != '' ">
+                and code = #{code}
+            </if>
+            <if test = "fullName != null and fullName != '' ">
+                and full_name like concat('%',#{fullName},'%')
+            </if>
+            <if test = "id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test = "manager != null and manager != '' ">
+                and manager = #{manager}
+            </if>
+            <if test = "name != null and name != '' ">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test = "remark != null and remark != '' ">
+                and remark  like concat('%',#{remark},'%')
+            </if>
+            <if test = "sort != null and sort != '' ">
+                and sort = #{sort}
+            </if>
+            <if test = "status != null and status != '' ">
+                and status = #{status}
+            </if>
+            <if test = "updateBy != null and updateBy != '' ">
+                and update_by = #{updateBy}
+            </if>
+            <if test = "updateTime != null and updateTime != '' ">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateSystemRole">
+        update system_role
+        <set>
+            code = #{code},
+            create_by = #{createBy},
+            full_name = #{fullName},
+            manager = #{manager},
+            name = #{name},
+            remark = #{remark},
+            sort = #{sort},
+            status = #{status},
+            update_by = #{updateBy},
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+
+    <delete id="deleteSystemRole">
+        delete from system_role
+        <where>
+            id in
+            <foreach collection="idList" item="item" close=")" open="(" separator=",">
+                #{item}
+            </foreach>
+        </where>
+    </delete>
+
+</mapper>

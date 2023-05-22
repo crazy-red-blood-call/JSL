@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: beloved-town-server
+  profiles:
+    active: dev
+#    active: txy
+#  允许循环依赖
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    static-path-pattern: /static/**
+
+
+file:
+  run: /file/**
+  local: file:C:\Users\86159\Desktop\core\picture\

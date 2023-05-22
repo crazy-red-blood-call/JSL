@@ -1,0 +1,75 @@
+spring:
+  datasource:
+    url: jdbc:mysql://119.91.206.172:3306/beloved_town?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: 13932333913jsl
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      # 池中最大连接数（包括空闲和正在使用的连接）
+      maximum-pool-size: 30
+      # 池中最小空闲连接数量，默认值10
+      minimum-idle: 5
+      # 一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10s
+      idle-timeout: 30000
+      # 是否自动提交池中返回的连接
+      auto-commit: true
+      # 连接池名字
+      pool-name: system-manage
+      # 连接超时时间。默认值为30s
+      connection-timeout: 300000
+      # 测试连接
+      connection-test-query: select 1
+  redis:
+    host: 119.91.206.172
+    port: 6379
+    password: ENC(oFPybrLrQ166Ksj7QZoxQGSP2WoOshWpTmgqqKpWVtaVzExyjE6UUDf5N8dRn1Nx)
+    jedis:
+      pool:
+        # 最大连接数
+        max-active: 30
+        # 连接池最大阻塞等待时间
+        max-wait: -1
+        # 连接池中最大空闲
+        max-idle: 10
+        # 链接池中最小空闲
+        min-idle: 5
+
+logging:
+  # 配置日志配置文件路径
+  config: classpath:logback-graylog.xml
+  # 配置sql打印日志级别，debug可以打印完整的sql
+  level:
+    "com.antlord.mapper": debug
+
+mybatis:
+  # 配置mybatis的xml包路径
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+token:
+  # 登录的token有效期120s
+  expires: 120
+  # token签名
+  sign: beloved-town-server
+
+# 配置文件敏感信息加密
+jasypt:
+  algorithm: PBEWITHHMACSHA512ANDAES_256
+  password: ngHLqLXege3uTgQDnRyFkw==
+
+# 接口签名秘钥
+cipher:
+  md5Key: PiD8p2d2pOI9==
+  enable: true
+
+# 限流
+limit:
+  # 是否开启
+  enable: true
+  # 指定时间内最大请求次数
+  count: 10
+  # 指定时间段内单位秒
+  period: 2
+  # 限流前缀
+  prefix: beloved-town-server

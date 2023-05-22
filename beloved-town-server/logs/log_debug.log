@@ -1,0 +1,1002 @@
+2023-05-15 16:07:17.010 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:07:17.023 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:07:17.054 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:17.062 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:07:17.063 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:07:17.066 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:17.338 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:07:17.339 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:07:17.344 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:07:17.347 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:07:17.349 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:17.351 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:17.353 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:07:17.353 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:07:17.354 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:07:17.354 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:07:17.360 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:07:17.363 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 3 
+ 2023-05-15 16:07:20.765 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:07:20.766 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:07:20.768 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:20.769 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:07:20.769 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:07:20.774 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:07:21.525 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:07:21.526 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:07:21.530 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:22.197 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:07:22.197 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:07:22.198 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:07:22.198 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:07:22.199 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:22.199 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:07:22.200 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:07:22.200 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:07:22.200 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:07:22.200 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:07:22.204 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:07:22.204 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 3 
+ 2023-05-15 16:09:56.180 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:09:56.181 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:09:56.182 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:11.472 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:11:11.473 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:11:11.474 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:11.475 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:11:11.475 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:11:11.475 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:11:11.476 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:11:11.478 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:11.485 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 3 
+ 2023-05-15 16:11:11.485 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:11:11.486 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:11:11.489 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:11:17.212 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:11:17.214 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:11:17.215 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:17.215 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:11:17.216 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:11:17.218 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:11:29.753 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:11:29.754 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:11:29.755 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:30.457 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:11:30.458 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:11:30.458 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:11:30.458 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:11:30.459 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:30.459 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:11:30.460 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:11:30.460 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:11:30.460 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:11:30.460 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:11:30.465 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 3 
+ 2023-05-15 16:11:30.466 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:12:07.659 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? and user_name = ? and phone = ? and gender = ? 
+ 2023-05-15 16:12:07.660 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String), 王五(String), 13456(String), F(String) 
+ 2023-05-15 16:12:07.660 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 0 
+ 2023-05-15 16:12:07.665 [DEBUG] [-] c.a.m.S.saveUser.java:137 : ==>  Preparing: insert into sys_user(user_id, account_name, user_name, phone, password, gender, create_by,update_by) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:12:07.670 [DEBUG] [-] c.a.m.S.saveUser.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String), ww(String), 王五(String), 13456(String), e10adc3949ba59abbe56e057f20f883e(String), F(String), admin(String), admin(String) 
+ 2023-05-15 16:12:07.676 [DEBUG] [-] c.a.m.S.saveUser.java:137 : <==    Updates: 1 
+ 2023-05-15 16:12:07.693 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:12:07.693 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:07.694 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:07.694 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:12:07.695 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:07.698 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:12:21.043 [DEBUG] [-] c.a.m.S.deleteAllRole.java:137 : ==>  Preparing: delete from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:12:21.044 [DEBUG] [-] c.a.m.S.deleteAllRole.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:12:21.047 [DEBUG] [-] c.a.m.S.deleteAllRole.java:137 : <==    Updates: 0 
+ 2023-05-15 16:12:21.052 [DEBUG] [-] c.a.m.S.addRoles.java:137 : ==>  Preparing: insert into system_role_user( role_id, role_name, user_id) values ( ?, (select name from system_role where id= ?), ? ) 
+ 2023-05-15 16:12:21.052 [DEBUG] [-] c.a.m.S.addRoles.java:137 : ==> Parameters: 14(String), 14(String), 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:12:21.054 [DEBUG] [-] c.a.m.S.addRoles.java:137 : <==    Updates: 1 
+ 2023-05-15 16:12:21.073 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:12:21.074 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:21.074 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:21.075 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:12:21.076 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:21.078 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:12:22.629 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:12:22.630 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:22.631 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:22.631 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:12:22.632 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:22.634 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:12:30.466 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:12:30.466 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:12:30.467 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:30.467 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:30.468 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:30.468 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:30.468 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:12:30.468 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:12:30.469 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:30.469 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:12:30.471 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:12:30.472 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:12:48.190 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:12:48.191 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: kh(String) 
+ 2023-05-15 16:12:48.191 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 0 
+ 2023-05-15 16:12:51.938 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:12:51.939 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:12:51.940 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:51.940 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:12:51.941 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:12:51.942 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:51.996 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:12:51.996 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:51.998 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:51.999 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:12:51.999 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:52.002 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 16:12:57.706 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:12:57.707 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:57.708 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:57.709 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:12:57.710 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:57.712 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 16:12:59.679 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:12:59.680 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:12:59.681 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:12:59.681 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:12:59.681 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:12:59.684 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 16:13:23.740 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:13:23.740 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:13:23.741 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:23.742 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:13:23.742 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:13:23.743 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:23.805 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:13:23.806 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:13:23.806 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:23.806 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:23.808 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:23.808 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:23.808 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:23.808 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:23.809 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:13:23.809 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:13:23.810 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:13:23.811 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:13:38.810 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:13:38.810 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:38.811 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:38.812 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:38.812 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:13:38.814 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:13:43.001 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:13:43.001 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:13:43.001 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:43.002 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:43.002 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:43.002 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:43.003 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:43.003 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:43.004 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:13:43.004 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:13:43.005 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:13:43.005 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:13:49.067 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:13:49.068 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:13:49.070 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:49.980 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:13:49.980 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:13:49.981 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:49.981 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:13:49.982 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:49.982 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:13:49.982 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:49.982 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:13:49.983 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:13:49.983 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:13:49.984 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:13:49.985 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:13:50.653 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:13:50.653 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:13:50.654 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:08.815 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:16:08.816 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:16:08.817 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:08.818 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:16:08.819 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:16:08.819 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:16:09.923 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:16:09.923 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:16:09.924 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:16:09.924 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:16:09.925 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:09.925 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:09.926 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:16:09.926 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:16:09.926 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:16:09.926 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:16:09.927 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:16:09.927 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:16:11.535 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:16:11.535 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:16:11.536 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:23.142 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:16:23.144 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: null, 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:16:58.045 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:16:58.046 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:16:58.046 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:58.047 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:16:58.047 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:16:58.048 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:58.109 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:16:58.110 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:16:58.110 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:16:58.110 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:16:58.110 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:58.111 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:16:58.111 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:16:58.111 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:16:58.111 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:16:58.112 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:16:58.113 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:16:58.114 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:17:06.021 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:17:06.022 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:17:06.023 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:06.843 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:17:06.843 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:17:06.845 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:06.846 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:17:06.846 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:17:06.848 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:17:07.819 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:17:07.820 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:17:07.820 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:17:07.820 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:17:07.821 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:17:07.823 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:17:07.824 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:17:09.066 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:17:09.067 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:17:09.068 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:09.069 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:17:09.069 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:17:09.071 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:17:09.484 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:17:09.484 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:17:09.485 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:17:23.397 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:17:23.398 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:17:28.963 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:17:28.964 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:18:34.489 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:18:34.491 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:18:34.491 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:18:34.492 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:18:34.492 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:18:34.494 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:18:35.636 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:18:35.636 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:18:35.637 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:18:36.148 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:18:36.150 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:18:36.150 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:18:36.150 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:18:36.151 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:18:36.152 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:18:36.153 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:18:37.270 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:18:37.271 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:18:37.272 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:23:09.148 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:23:09.149 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: null, 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:23:15.368 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:23:15.369 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: null, 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:23:57.409 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:23:57.410 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:25:13.340 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:25:13.341 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:25:59.238 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:25:59.238 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), null, 启用(String), 1(String), null 
+ 2023-05-15 16:35:37.124 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:35:37.138 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:35:37.151 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:35:37.158 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:35:37.160 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:35:37.163 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:35:37.369 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:35:37.369 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:35:37.369 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:35:37.370 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:35:37.370 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:35:37.370 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:35:37.372 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:35:37.372 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:35:37.373 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:35:37.373 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:35:37.379 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:35:37.382 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:35:40.855 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:35:40.856 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:35:40.857 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:36:00.538 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:36:00.543 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 1(String), 1(String), http://localhost:8080/file/1684139759453.png(String), 启用(String), 1(String), null 
+ 2023-05-15 16:36:00.545 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:36:00.565 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:36:00.567 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:36:00.568 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:36:00.569 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:36:00.570 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:36:00.572 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 16:36:53.845 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:36:53.846 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 2(String), 1(String), http://localhost:8080/file/1684139812723.png(String), 启用(String), 2(String), null 
+ 2023-05-15 16:36:53.848 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:36:53.869 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:36:53.869 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:36:53.871 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:36:53.872 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:36:53.872 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:36:53.875 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 2 
+ 2023-05-15 16:37:04.520 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:37:04.520 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 3(String), 1(String), http://localhost:8080/file/1684139823428.png(String), 启用(String), 3(String), null 
+ 2023-05-15 16:37:04.523 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:37:04.543 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:37:04.544 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:37:04.545 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:04.546 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:04.547 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:37:04.551 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:37:11.351 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:37:11.351 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:37:11.352 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:11.353 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:37:11.353 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:37:11.354 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:11.420 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:37:11.421 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:37:11.422 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:11.423 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:11.424 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:37:11.431 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:37:21.503 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:37:21.503 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:37:21.504 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:21.505 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:21.505 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:37:21.511 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:37:23.341 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:37:23.341 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:37:23.343 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:23.343 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:23.343 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:37:23.346 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:37:47.291 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:37:47.292 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:37:47.294 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:47.294 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:47.294 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:37:47.298 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:37:52.820 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:37:52.821 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:37:52.822 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:37:52.822 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:37:52.823 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:37:52.826 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:38:20.649 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:38:20.650 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:38:20.651 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:20.651 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:38:20.652 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:38:20.652 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:20.716 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:38:20.717 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:20.718 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:20.718 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:38:20.718 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:38:20.718 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:20.719 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:38:20.720 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:20.720 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:38:20.720 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:38:20.721 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:38:20.723 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:38:22.501 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:38:22.502 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:38:22.503 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:22.503 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:38:22.504 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:38:22.505 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:38:28.290 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:38:28.291 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:28.293 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:28.293 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:38:28.295 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:38:28.297 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:38:29.251 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:38:29.251 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:38:29.251 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:38:29.253 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:38:29.254 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:38:29.256 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:38:29.257 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:38:34.120 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:38:34.121 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:38:34.122 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:34.122 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:38:34.123 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:38:34.124 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:38:37.077 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==>  Preparing: delete from manicure WHERE id in ( ? ) 
+ 2023-05-15 16:38:37.077 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==> Parameters: 15(String) 
+ 2023-05-15 16:38:37.082 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:38:37.097 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:38:37.097 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:38:37.098 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:37.099 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:38:37.099 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:38:37.100 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 2 
+ 2023-05-15 16:38:41.284 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:38:41.285 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:38:41.286 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:41.287 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:38:41.287 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:38:41.288 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:41.348 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:38:41.348 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:38:41.348 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:38:41.349 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:38:41.350 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:38:41.352 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:40:20.029 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:40:20.030 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:40:20.031 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:40:20.032 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:40:20.032 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:40:20.035 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:41:58.900 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:41:58.916 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:41:58.927 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:41:58.934 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:41:58.935 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:41:58.944 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:42:00.644 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:42:00.645 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:00.648 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:00.649 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:42:00.650 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:42:00.657 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:42:15.772 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:42:15.773 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:15.774 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:15.775 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:42:15.775 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:42:15.783 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:42:18.522 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:42:18.523 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:18.524 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:18.525 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:42:18.525 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:42:18.530 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:42:26.670 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:42:26.670 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:26.672 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:26.672 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:42:26.672 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:42:26.676 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:42:54.535 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:42:54.536 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:42:54.538 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:54.541 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:42:54.542 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:42:54.543 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:54.651 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:42:54.652 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:54.653 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:54.655 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:42:54.657 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:42:54.660 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:42:54.685 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:42:54.686 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:42:54.686 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:54.687 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:42:54.688 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:42:54.692 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:42:56.489 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:42:56.491 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:42:56.491 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:42:56.492 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:42:56.492 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:42:56.494 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 2 
+ 2023-05-15 16:43:07.223 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:43:07.228 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: null, 1(String), http://localhost:8081/file/1684140186048.png(String), 启用(String), 3(String), null 
+ 2023-05-15 16:43:21.430 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:43:21.431 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 3(String), 1(String), http://localhost:8081/file/1684140186048.png(String), 启用(String), 3(String), null 
+ 2023-05-15 16:43:21.433 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:43:21.452 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:43:21.453 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:43:21.454 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:43:21.454 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:43:21.455 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:43:21.457 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:46:03.014 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==>  Preparing: update manicure SET content = ?, create_by = ?, imgs = ?, status = ?, title = ?, update_by = ? WHERE id = ? 
+ 2023-05-15 16:46:03.017 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==> Parameters: 3(String), 1(String), http://localhost:8081/file/1684140331623.png(String), 启用(String), 3(String), null, 16(Long) 
+ 2023-05-15 16:46:03.031 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:46:03.058 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:46:03.058 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:46:03.059 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:46:03.059 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:46:03.060 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:46:03.062 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:47:30.284 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==>  Preparing: update manicure SET content = ?, create_by = ?, imgs = ?, status = ?, title = ?, update_by = ? WHERE id = ? 
+ 2023-05-15 16:47:30.304 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==> Parameters: 3(String), 1(String), http://localhost:8081/file/1684140444342.png(String), 启用(String), 3(String), null, 16(Long) 
+ 2023-05-15 16:47:30.316 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:47:30.451 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:47:30.452 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:47:30.465 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:47:30.471 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:47:30.472 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:47:30.481 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:48:00.515 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==>  Preparing: update manicure SET content = ?, create_by = ?, imgs = ?, status = ?, title = ?, update_by = ? WHERE id = ? 
+ 2023-05-15 16:48:00.516 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==> Parameters: 2(String), 1(String), http://localhost:8081/file/1684140479397.png(String), 启用(String), 2(String), null, 14(Long) 
+ 2023-05-15 16:48:00.519 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:48:00.539 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:48:00.540 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:48:00.541 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:00.542 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:00.542 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:48:00.545 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:48:10.097 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==>  Preparing: update manicure SET content = ?, create_by = ?, imgs = ?, status = ?, title = ?, update_by = ? WHERE id = ? 
+ 2023-05-15 16:48:10.098 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==> Parameters: 3(String), 1(String), http://localhost:8081/file/1684140488316.png(String), 启用(String), 3(String), null, 16(Long) 
+ 2023-05-15 16:48:10.102 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:48:10.119 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:48:10.119 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:48:10.121 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:10.122 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:10.122 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:48:10.126 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:48:20.979 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==>  Preparing: update manicure SET content = ?, create_by = ?, imgs = ?, status = ?, title = ?, update_by = ? WHERE id = ? 
+ 2023-05-15 16:48:20.980 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : ==> Parameters: 1(String), 1(String), http://localhost:8081/file/1684140499850.png(String), 启用(String), 1(String), null, 13(Long) 
+ 2023-05-15 16:48:20.993 [DEBUG] [-] c.a.m.M.updateManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:48:21.012 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:48:21.012 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:48:21.014 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:21.014 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:21.015 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:48:21.020 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:48:27.327 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:48:27.328 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:48:27.329 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:27.332 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:48:27.332 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:48:27.334 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:27.420 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:48:27.420 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:27.421 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:27.421 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:27.422 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:48:27.430 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:48:35.771 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:48:35.772 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:35.773 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:35.773 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:35.775 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:48:35.779 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:48:41.824 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:48:41.826 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:41.826 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:41.827 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:48:41.827 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:48:41.831 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:48:57.381 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:48:57.382 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:48:57.383 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:57.383 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:48:57.384 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:48:57.385 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:57.456 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:48:57.456 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:57.458 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:57.459 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:48:57.459 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:48:57.461 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:48:57.500 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:48:57.500 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:57.501 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:57.503 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:48:57.503 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:48:57.504 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:48:58.631 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:48:58.632 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:48:58.634 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:48:58.634 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:48:58.635 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:48:58.637 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:49:00.802 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:49:00.803 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:49:00.804 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:00.804 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:49:00.804 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:49:00.806 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:49:01.434 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:49:01.435 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:01.435 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:01.436 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:49:01.437 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:49:01.439 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:49:02.397 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:49:02.398 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:49:02.399 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:02.399 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:49:02.400 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:49:02.401 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:49:05.738 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:49:05.740 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:05.740 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:49:05.740 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:05.740 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:05.741 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:49:05.741 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:05.742 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:49:05.742 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:49:05.742 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:49:05.743 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:49:05.744 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:49:14.055 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:49:14.055 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:49:14.058 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:14.058 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:49:14.058 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:49:14.059 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:14.128 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:49:14.129 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:14.130 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:14.131 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:49:14.132 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:49:14.136 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:49:26.205 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:49:26.206 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:26.206 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:26.207 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:49:26.207 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:49:26.210 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:49:27.934 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:49:27.934 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:49:27.935 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:49:27.935 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:49:27.936 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:49:27.939 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 7 
+ 2023-05-15 16:51:00.632 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:51:00.632 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:51:00.633 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:00.635 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:51:00.635 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:51:00.635 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:00.698 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:51:00.698 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:51:00.699 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:00.699 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:51:00.700 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:51:00.700 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:51:00.700 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:51:00.701 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:51:00.702 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:00.702 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:51:00.703 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:51:00.707 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:51:02.331 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:51:02.332 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:51:02.333 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:02.334 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:51:02.335 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:51:02.337 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:51:14.748 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:51:14.749 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:51:14.750 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:14.750 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:51:14.751 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:51:14.754 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:51:21.959 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:51:21.960 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: sjs(String) 
+ 2023-05-15 16:51:21.960 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 0 
+ 2023-05-15 16:51:28.241 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:51:28.242 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: shangsan(String) 
+ 2023-05-15 16:51:28.242 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 0 
+ 2023-05-15 16:51:36.786 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:51:36.787 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: zhangsan(String) 
+ 2023-05-15 16:51:36.788 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:36.788 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:51:36.789 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:51:36.790 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:36.845 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:51:36.845 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:51:36.846 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:36.846 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:51:36.847 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:51:36.848 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 2 
+ 2023-05-15 16:51:45.060 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==>  Preparing: delete from manicure WHERE id in ( ? ) 
+ 2023-05-15 16:51:45.061 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==> Parameters: 12(String) 
+ 2023-05-15 16:51:45.077 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:51:45.091 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:51:45.092 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:51:45.093 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:45.094 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:51:45.094 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:51:45.095 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 16:51:47.097 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==>  Preparing: delete from manicure WHERE id in ( ? ) 
+ 2023-05-15 16:51:47.097 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : ==> Parameters: 11(String) 
+ 2023-05-15 16:51:47.111 [DEBUG] [-] c.a.m.M.deleteManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:51:47.124 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:51:47.125 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:51:47.126 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:37.186 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 16:55:37.186 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 4(String), 3428d08c3ac047c89289293aa234c7f5(String), http://localhost:8081/file/1684140934619.png(String), 启用(String), 4(String), null 
+ 2023-05-15 16:55:37.188 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 16:55:37.209 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:55:37.210 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:55:37.211 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:37.211 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:55:37.211 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:55:37.213 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:41.475 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:55:41.475 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 16:55:41.476 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:41.477 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:55:41.477 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 16:55:41.478 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:41.534 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:55:41.534 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:55:41.535 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:55:41.535 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:55:41.535 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:55:41.537 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:56:03.646 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:56:03.647 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:56:03.648 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:56:03.649 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:56:03.649 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:56:03.651 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:56:06.664 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 16:56:06.665 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:56:06.666 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:56:06.666 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 16:56:06.666 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:56:06.668 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 6 
+ 2023-05-15 16:57:01.707 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:57:01.707 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 16:57:01.709 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:01.709 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:57:01.709 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:57:01.710 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:01.768 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 16:57:01.768 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:57:01.768 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:57:01.768 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:57:01.769 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:01.769 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:01.769 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:57:01.769 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 16:57:01.770 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:57:01.771 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:57:01.771 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:57:01.774 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 16:57:03.392 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 16:57:03.393 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 16:57:03.394 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:03.394 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 16:57:03.395 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 16:57:03.397 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 16:57:03.868 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:57:03.868 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 16:57:03.869 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:03.869 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:57:03.870 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 16:57:03.872 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 16:57:11.330 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 16:57:11.331 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: zhangsan(String) 
+ 2023-05-15 16:57:11.332 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:11.333 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 16:57:11.333 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:57:11.333 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:11.381 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:57:11.381 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:57:11.382 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:57:11.382 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:57:11.383 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:57:11.384 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 16:59:57.650 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:59:57.650 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:59:57.652 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:59:57.652 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:59:57.652 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:59:57.653 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 16:59:58.809 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 16:59:58.810 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 16:59:58.811 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 16:59:58.811 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 16:59:58.811 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 16:59:58.813 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 17:00:07.798 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:00:07.799 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 17:00:07.800 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:00:07.800 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:00:07.800 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 17:00:07.801 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:00:07.877 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:00:07.877 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:00:07.878 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:00:07.879 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:00:07.879 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:00:07.881 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 17:00:52.703 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:00:52.704 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:00:52.704 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:00:52.705 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:00:52.705 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:00:52.707 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 17:01:10.247 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:01:10.248 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:01:10.248 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:10.249 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:01:10.249 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:01:10.251 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 4 
+ 2023-05-15 17:01:23.020 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:01:23.021 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 17:01:23.023 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:23.023 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:01:23.023 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 17:01:23.024 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:23.099 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 17:01:23.099 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:01:23.100 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:23.100 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 17:01:23.101 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:01:23.101 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 17:01:23.102 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:01:23.102 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:23.102 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 17:01:23.103 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 17:01:23.103 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 17:01:23.105 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 17:01:24.534 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 17:01:24.535 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 17:01:24.535 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:01:24.535 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 17:01:24.535 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 1(String), 10(Integer) 
+ 2023-05-15 17:01:24.538 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 3 
+ 2023-05-15 17:05:12.296 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:05:12.297 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: zhangsan(String) 
+ 2023-05-15 17:05:12.298 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:12.298 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:05:12.299 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 17:05:12.300 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:12.362 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 17:05:12.362 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 17:05:12.363 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:12.364 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 17:05:12.364 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 17:05:12.365 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:34.823 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 17:05:34.824 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: null, 3428d08c3ac047c89289293aa234c7f5(String), http://localhost:8081/file/1684141524523.png(String), 启用(String), 甜桃粉(String), null 
+ 2023-05-15 17:05:40.427 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==>  Preparing: insert into manicure( content, create_by, imgs, status, title, update_by) value ( ?, ?, ?, ?, ?, ? ) 
+ 2023-05-15 17:05:40.427 [DEBUG] [-] c.a.m.M.addManicure.java:137 : ==> Parameters: 甜桃粉(String), 3428d08c3ac047c89289293aa234c7f5(String), http://localhost:8081/file/1684141524523.png(String), 启用(String), 甜桃粉(String), null 
+ 2023-05-15 17:05:40.439 [DEBUG] [-] c.a.m.M.addManicure.java:137 : <==    Updates: 1 
+ 2023-05-15 17:05:40.458 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 AND create_by = ? 
+ 2023-05-15 17:05:40.459 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String) 
+ 2023-05-15 17:05:40.459 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:40.461 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 and create_by = ? order by update_time desc LIMIT ? 
+ 2023-05-15 17:05:40.461 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 3428d08c3ac047c89289293aa234c7f5(String), 10(Integer) 
+ 2023-05-15 17:05:40.462 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 2 
+ 2023-05-15 17:05:46.333 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:05:46.334 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 17:05:46.335 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:46.335 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:05:46.335 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 17:05:46.336 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:46.387 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:05:46.387 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:05:46.388 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:46.389 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:05:46.389 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:05:46.391 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:05:48.413 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:05:48.414 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:05:48.414 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:48.415 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:05:48.415 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:05:48.417 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:05:56.556 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:05:56.557 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:05:56.558 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:05:56.558 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:05:56.558 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:05:56.560 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:08:06.861 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:08:06.862 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: ww(String) 
+ 2023-05-15 17:08:06.863 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:06.864 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:08:06.864 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 0fea4f2b16994a9aa272f8e9fa02f741(String) 
+ 2023-05-15 17:08:06.865 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:07.016 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:08:07.016 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:08:07.017 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:07.018 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:08:07.018 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:08:07.020 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:08:10.660 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:08:10.661 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:08:10.662 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:10.662 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:08:10.662 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:08:10.664 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:08:12.092 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:08:12.092 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:08:12.093 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:12.093 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:08:12.093 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:08:12.096 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:08:14.338 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:08:14.338 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:08:14.339 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:14.340 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:08:14.340 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:08:14.342 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:08:17.158 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:08:17.158 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:08:17.159 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:08:17.160 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:08:17.161 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:08:17.163 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:19:53.459 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:19:53.460 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: admin(String) 
+ 2023-05-15 17:19:53.461 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:19:53.461 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:19:53.461 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: 1(String) 
+ 2023-05-15 17:19:53.462 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:19:53.534 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM sys_user a WHERE delete_flag = 0 
+ 2023-05-15 17:19:53.535 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:19:53.535 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM system_role WHERE delete_flag = 0 
+ 2023-05-15 17:19:53.535 [DEBUG] [-] c.a.m.S.findFuzzyUserList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:19:53.536 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:19:53.536 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender,create_time,update_time, (select group_concat(b.role_id) from system_role_user b where a.user_id=b.user_id) roleIds from sys_user a WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 17:19:53.536 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:19:53.536 [DEBUG] [-] c.a.m.S.getSystemRoleList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:19:53.537 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==>  Preparing: SELECT code, create_by, create_time, delete_flag, full_name, id, manager, name, remark, sort, status, update_by, update_time from system_role WHERE delete_flag = 0 LIMIT ? 
+ 2023-05-15 17:19:53.538 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : ==> Parameters: 100(Integer) 
+ 2023-05-15 17:19:53.538 [DEBUG] [-] c.a.m.S.findFuzzyUserList.java:137 : <==      Total: 4 
+ 2023-05-15 17:19:53.540 [DEBUG] [-] c.a.m.S.getSystemRoleList.java:137 : <==      Total: 3 
+ 2023-05-15 17:20:01.739 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==>  Preparing: select user_id, account_name, user_name, phone, password, gender, lock_flag from sys_user WHERE delete_flag = 0 and account_name = ? 
+ 2023-05-15 17:20:01.740 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : ==> Parameters: lisi(String) 
+ 2023-05-15 17:20:01.740 [DEBUG] [-] c.a.m.S.findPreciselyUserList.java:137 : <==      Total: 1 
+ 2023-05-15 17:20:01.742 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==>  Preparing: select role_name from system_role_user WHERE user_id = ? 
+ 2023-05-15 17:20:01.742 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : ==> Parameters: b4eca6afbbd44f548f9ef9d47fd88087(String) 
+ 2023-05-15 17:20:01.742 [DEBUG] [-] c.a.m.S.getRoleNameList.java:137 : <==      Total: 1 
+ 2023-05-15 17:20:01.820 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:20:01.820 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:20:01.820 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:20:01.821 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:20:01.821 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:20:01.823 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:20:04.694 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:20:04.694 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:20:04.695 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:20:04.696 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:20:04.696 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:20:04.698 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 2023-05-15 17:20:06.997 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==>  Preparing: SELECT count(0) FROM manicure WHERE delete_flag = 0 
+ 2023-05-15 17:20:06.998 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : ==> Parameters:  
+ 2023-05-15 17:20:06.998 [DEBUG] [-] c.a.m.M.getManicureList_COUNT.java:137 : <==      Total: 1 
+ 2023-05-15 17:20:06.999 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==>  Preparing: SELECT content, create_by, create_time, delete_flag, id, imgs, status, title, update_by, update_time from manicure WHERE delete_flag = 0 order by update_time desc LIMIT ? 
+ 2023-05-15 17:20:06.999 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : ==> Parameters: 10(Integer) 
+ 2023-05-15 17:20:07.001 [DEBUG] [-] c.a.m.M.getManicureList.java:137 : <==      Total: 5 
+ 

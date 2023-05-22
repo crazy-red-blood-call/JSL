@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 映射文件，映射到对应的SQL接口 -->
+<mapper namespace="com.antlord.mapper.ManicureMapper">
+	
+    <insert id="addManicure">
+        insert into manicure(
+                content,
+                create_by,
+                imgs,
+                status,
+                title,
+                update_by)
+        value (
+                #{param.content},
+                #{param.createBy},
+                #{param.imgs},
+                #{param.status},
+                #{param.title},
+                #{param.updateBy}
+        )
+    </insert>
+
+    <select id="getManicureList" resultType="com.antlord.entity.Manicure">
+        SELECT
+                content,
+                create_by,
+                create_time,
+                delete_flag,
+                id,
+                imgs,
+                status,
+                title,
+                update_by,
+                update_time
+        from manicure
+        <where>
+                and delete_flag = 0
+            <if test = "content != null and content != '' ">
+                and content = #{content}
+            </if>
+            <if test = "createBy != null and createBy != '' ">
+                and create_by = #{createBy}
+            </if>
+            <if test = "createTime != null and createTime != '' ">
+                and create_time = #{createTime}
+            </if>
+            <if test = "deleteFlag != null and deleteFlag != '' ">
+                and delete_flag = #{deleteFlag}
+            </if>
+            <if test = "id != null and id != '' ">
+                and id = #{id}
+            </if>
+            <if test = "imgs != null and imgs != '' ">
+                and imgs = #{imgs}
+            </if>
+            <if test = "status != null and status != '' ">
+                and status = #{status}
+            </if>
+            <if test = "title != null and title != '' ">
+                and title = #{title}
+            </if>
+            <if test = "updateBy != null and updateBy != '' ">
+                and update_by = #{updateBy}
+            </if>
+            <if test = "updateTime != null and updateTime != '' ">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+       order by update_time desc
+    </select>
+
+    <update id="updateManicure">
+        update manicure
+        <set>
+            content = #{param.content},
+            create_by = #{param.createBy},
+            imgs = #{param.imgs},
+            status = #{param.status},
+            title = #{param.title},
+            update_by = #{param.updateBy},
+        </set>
+        <where>
+            id = #{param.id}
+        </where>
+    </update>
+
+    <delete id="deleteManicure">
+        delete from manicure
+        <where>
+            id in
+            <foreach collection="idList" item="item" separator="," open="(" close=")">
+                #{item}
+            </foreach>
+        </where>
+    </delete>
+
+</mapper>

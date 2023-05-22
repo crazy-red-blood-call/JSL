@@ -1,0 +1,37 @@
+:root {
+    --active-color: red;
+    /*表格标题背景颜色*/
+    --table-header-bg-color: #f3f8fe
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/*div:before,*/
+/*div:after{*/
+/*    content: '';*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+
+@font-face {
+    font-family: 'ds-digit';
+    src: url("@/assets/font/DS-DIGIT.TTF");
+    font-weight: normal;
+    font-style: normal;
+}

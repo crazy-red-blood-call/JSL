@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.antlord.mapper.DemoMapper">
+
+    <select id="getCity" resultType="java.lang.String">
+        select id from test_t where name like concat('%',#{param},'%') limit 1
+    </select>
+
+</mapper>

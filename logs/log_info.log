@@ -1,0 +1,735 @@
+2023-05-17 00:53:31.871 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 5892 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 00:53:31.873 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 00:53:32.432 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 00:53:32.435 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 00:53:32.457 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 00:53:32.670 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 00:53:32.671 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 00:53:32.674 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 00:53:32.674 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 00:53:32.676 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 00:53:32.676 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 00:53:32.677 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 00:53:32.677 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 00:53:32.678 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 00:53:32.980 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 00:53:33.022 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 00:53:33.027 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 00:53:33.158 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 00:53:33.165 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 00:53:33.166 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 00:53:33.166 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 00:53:33.255 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 00:53:33.255 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1337 ms 
+ 2023-05-17 00:53:33.961 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 00:53:34.388 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 00:53:34.396 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 00:53:34.397 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 00:53:34.398 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 00:53:34.399 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 00:53:34.399 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 00:53:34.408 [INFO] [-] c.a.Application.java:61 : Started Application in 2.971 seconds (JVM running for 3.649) 
+ 2023-05-17 00:54:05.824 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 00:54:05.824 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 00:54:05.827 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 2 ms 
+ 2023-05-17 00:54:06.141 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:06.141 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:06.225 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 00:54:06.307 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:06.505 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:06.547 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 00:54:06.666 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:06.666 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:06.666 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:06.666 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:09.792 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:09.798 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:10.215 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:10.220 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:10.541 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"发电","password":"3b1c488411db6f1f2c676da7b6b8a5f9"}} 
+ 2023-05-17 00:54:10.546 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:22.494 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"物是人非","password":"13013d9e6cca4a1a41d8edb9f00f8c8c"}} 
+ 2023-05-17 00:54:22.501 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:54:33.931 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"21232f297a57a5a743894a0e4a801fc3"}} 
+ 2023-05-17 00:54:33.937 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:56:25.457 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:56:25.461 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:56:26.212 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:56:26.214 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:56:26.390 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:56:26.393 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:56:26.563 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:56:26.566 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:57:08.447 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:08.451 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:57:09.134 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:09.140 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:57:09.313 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:09.317 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:57:09.511 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:09.515 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:57:22.260 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:22.269 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:22.915 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:22.920 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:23.130 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:23.134 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:23.408 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:23.412 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:33.795 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:33.801 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:34.365 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:34.370 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:34.540 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:34.545 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:34.722 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:34.727 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:57:34.901 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:57:34.906 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:08.922 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:08.927 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:09.568 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:09.574 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:09.765 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:09.769 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:16.822 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"c863878a16ca7f783fab23f8f46f8a43"}} 
+ 2023-05-17 00:58:16.827 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:17.418 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"c863878a16ca7f783fab23f8f46f8a43"}} 
+ 2023-05-17 00:58:17.422 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:17.893 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"c863878a16ca7f783fab23f8f46f8a43"}} 
+ 2023-05-17 00:58:17.898 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:20.676 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"c863878a16ca7f783fab23f8f46f8a43"}} 
+ 2023-05-17 00:58:20.682 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:21.063 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"c863878a16ca7f783fab23f8f46f8a43"}} 
+ 2023-05-17 00:58:21.068 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:28.469 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:28.473 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:29.169 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:29.173 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:29.390 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:29.394 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:29.661 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"sjs","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:29.665 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 00:58:43.095 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:43.101 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:43.700 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:43.705 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:43.939 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:43.944 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:44.164 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 00:58:44.169 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:51.857 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"e0ec4234199499bc3e94f956b178fe18"}} 
+ 2023-05-17 00:58:51.863 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:52.509 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"e0ec4234199499bc3e94f956b178fe18"}} 
+ 2023-05-17 00:58:52.515 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:52.749 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"e0ec4234199499bc3e94f956b178fe18"}} 
+ 2023-05-17 00:58:52.754 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:52.967 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"e0ec4234199499bc3e94f956b178fe18"}} 
+ 2023-05-17 00:58:52.971 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:58:59.592 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 00:58:59.598 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:59:00.189 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 00:59:00.194 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 00:59:00.406 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 00:59:00.411 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:01:42.064 [INFO] [-] c.z.h.HikariDataSource.java:350 : system-manage - Shutdown initiated... 
+ 2023-05-17 01:01:42.069 [INFO] [-] c.z.h.HikariDataSource.java:352 : system-manage - Shutdown completed. 
+ 2023-05-17 01:01:47.345 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 5756 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 01:01:47.347 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 01:01:47.845 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 01:01:47.847 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 01:01:47.866 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 01:01:48.073 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 01:01:48.074 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 01:01:48.075 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 01:01:48.075 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 01:01:48.076 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 01:01:48.076 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 01:01:48.077 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 01:01:48.078 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 01:01:48.078 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 01:01:48.344 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 01:01:48.389 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 01:01:48.395 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 01:01:48.505 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 01:01:48.513 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 01:01:48.513 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 01:01:48.513 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 01:01:48.597 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 01:01:48.597 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1222 ms 
+ 2023-05-17 01:01:49.285 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 01:01:49.712 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 01:01:49.720 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 01:01:49.721 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 01:01:49.721 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 01:01:49.721 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 01:01:49.721 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 01:01:49.722 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 01:01:49.729 [INFO] [-] c.a.Application.java:61 : Started Application in 2.774 seconds (JVM running for 3.212) 
+ 2023-05-17 01:02:13.348 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 01:02:13.349 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 01:02:13.350 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 1 ms 
+ 2023-05-17 01:02:13.662 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 01:02:13.741 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 01:02:14.026 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 01:02:14.118 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:14.321 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 01:02:14.327 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:14.900 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 01:02:14.907 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:15.077 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 01:02:15.082 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:36.888 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:36.893 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 01:02:37.452 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:37.456 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 01:02:37.628 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:37.631 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 01:02:37.807 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:37.811 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 01:02:51.517 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:51.521 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:52.128 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:52.131 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:52.317 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:52.320 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:52.492 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:52.495 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:52.678 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:52.681 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 01:02:52.865 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 01:02:52.867 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:31:05.786 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 15716 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 08:31:05.788 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 08:31:06.314 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 08:31:06.316 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 08:31:06.340 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 08:31:06.545 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 08:31:06.547 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 08:31:06.548 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 08:31:06.548 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 08:31:06.549 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 08:31:06.550 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 08:31:06.550 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 08:31:06.550 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 08:31:06.550 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 08:31:06.823 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 08:31:06.877 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 08:31:06.884 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 08:31:07.010 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 08:31:07.015 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 08:31:07.016 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 08:31:07.016 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 08:31:07.115 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 08:31:07.115 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1300 ms 
+ 2023-05-17 08:31:07.869 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 08:31:08.290 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 08:31:08.298 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 08:31:08.298 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 08:31:08.300 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 08:31:08.301 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 08:31:08.310 [INFO] [-] c.a.Application.java:61 : Started Application in 2.907 seconds (JVM running for 3.57) 
+ 2023-05-17 08:32:14.962 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 08:32:14.963 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 08:32:14.964 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 1 ms 
+ 2023-05-17 08:32:15.092 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:15.123 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 08:32:15.248 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 08:32:15.289 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:15.496 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:15.498 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:15.673 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:15.676 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:16.290 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:16.293 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:16.630 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:16.632 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:16.842 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:16.845 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:19.559 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:19.562 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:19.742 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:19.747 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:32:19.934 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 08:32:19.939 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 08:39:12.436 [INFO] [-] c.z.h.HikariDataSource.java:350 : system-manage - Shutdown initiated... 
+ 2023-05-17 08:39:12.442 [INFO] [-] c.z.h.HikariDataSource.java:352 : system-manage - Shutdown completed. 
+ 2023-05-17 09:53:41.708 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 15624 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 09:53:41.712 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 09:53:42.365 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 09:53:42.368 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 09:53:42.395 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 09:53:42.650 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 09:53:42.651 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 09:53:42.654 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 09:53:42.654 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 09:53:42.654 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 09:53:42.654 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 09:53:42.656 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 09:53:42.656 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 09:53:42.656 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 09:53:42.937 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 09:53:42.982 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 09:53:42.986 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 09:53:43.112 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 09:53:43.120 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 09:53:43.120 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 09:53:43.120 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 09:53:43.219 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 09:53:43.219 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1461 ms 
+ 2023-05-17 09:53:43.979 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 09:53:44.419 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 09:53:44.432 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 09:53:44.433 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 09:53:44.433 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 09:53:44.434 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 09:53:44.434 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 09:53:44.434 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 09:53:44.434 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 09:53:44.435 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 09:53:44.435 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 09:53:44.435 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 09:53:44.435 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 09:53:44.441 [INFO] [-] c.a.Application.java:61 : Started Application in 3.258 seconds (JVM running for 3.901) 
+ 2023-05-17 11:18:24.819 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 9988 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 11:18:24.821 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 11:18:25.266 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 11:18:25.269 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 11:18:25.289 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 11:18:25.483 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 11:18:25.484 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:18:25.485 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:25.485 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:25.485 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:25.485 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 11:18:25.486 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 11:18:25.486 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:25.486 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:25.746 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 11:18:25.794 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 11:18:25.799 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 11:18:25.910 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 11:18:25.916 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:18:25.917 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 11:18:25.917 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 11:18:26.006 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 11:18:26.006 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1153 ms 
+ 2023-05-17 11:18:26.699 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 11:18:27.131 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:18:27.139 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 11:18:27.140 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 11:18:27.140 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:27.141 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 11:18:27.148 [INFO] [-] c.a.Application.java:61 : Started Application in 2.712 seconds (JVM running for 3.158) 
+ 2023-05-17 11:18:36.350 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 14936 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 11:18:36.352 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 11:18:36.776 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 11:18:36.778 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 11:18:36.796 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 11:18:36.975 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 11:18:36.976 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:18:36.977 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:36.977 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:36.978 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:36.978 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 11:18:36.978 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 11:18:36.978 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:36.978 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:37.222 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 11:18:37.265 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 11:18:37.269 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 11:18:37.375 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 11:18:37.382 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:18:37.382 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 11:18:37.383 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 11:18:37.462 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 11:18:37.464 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1082 ms 
+ 2023-05-17 11:18:38.141 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 11:18:38.546 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:18:38.553 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 11:18:38.554 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:18:38.555 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:18:38.556 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:18:38.556 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 11:18:38.562 [INFO] [-] c.a.Application.java:61 : Started Application in 2.568 seconds (JVM running for 3.074) 
+ 2023-05-17 11:19:04.191 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 11:19:04.191 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 11:19:04.193 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 2 ms 
+ 2023-05-17 11:19:04.339 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:04.339 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:04.377 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 11:19:04.499 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:04.511 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 11:19:04.560 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:04.560 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:04.560 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:04.680 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:04.682 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:04.846 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:04.848 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.034 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.037 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.227 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.229 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.399 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.401 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.556 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.561 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.711 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.713 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:05.862 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:05.866 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:06.013 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:06.016 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:19:06.189 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:19:06.193 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:02.690 [INFO] [-] c.z.h.HikariDataSource.java:350 : system-manage - Shutdown initiated... 
+ 2023-05-17 11:20:02.695 [INFO] [-] c.z.h.HikariDataSource.java:352 : system-manage - Shutdown completed. 
+ 2023-05-17 11:20:05.200 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 15992 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 11:20:05.202 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 11:20:05.655 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 11:20:05.657 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 11:20:05.677 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 11:20:05.867 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 11:20:05.868 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:20:05.869 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:20:05.869 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:20:05.870 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:20:05.870 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 11:20:05.870 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 11:20:05.870 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:20:05.870 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:20:06.108 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 11:20:06.151 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 11:20:06.157 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 11:20:06.269 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 11:20:06.275 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:20:06.276 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 11:20:06.276 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 11:20:06.369 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 11:20:06.370 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1136 ms 
+ 2023-05-17 11:20:07.064 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 11:20:07.464 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 11:20:07.473 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:20:07.474 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 11:20:07.475 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 11:20:07.475 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 11:20:07.475 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 11:20:07.475 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 11:20:07.482 [INFO] [-] c.a.Application.java:61 : Started Application in 2.689 seconds (JVM running for 3.124) 
+ 2023-05-17 11:20:23.002 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 11:20:23.002 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 11:20:23.003 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 1 ms 
+ 2023-05-17 11:20:23.150 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.150 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.187 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 11:20:23.282 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.318 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 11:20:23.365 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:23.365 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:23.365 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:23.449 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.451 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:23.617 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.620 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:23.793 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 11:20:23.795 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:54.367 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:20:54.370 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:54.971 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:20:54.974 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:55.147 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:20:55.150 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:55.317 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:20:55.321 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:20:55.496 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:20:55.499 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:12.751 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:12.755 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 11:21:13.452 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:13.455 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 11:21:13.639 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:13.642 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 11:21:13.818 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:13.822 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 11:21:14.011 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"1","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:14.014 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 11:21:20.939 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:20.942 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:21.124 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:21.126 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:21.302 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:21.305 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:21.503 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:21.505 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:21.675 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 11:21:21.677 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:40.377 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"c12e01f2a13ff5587e1e9e4aedb8242d"}} 
+ 2023-05-17 11:21:40.381 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:40.552 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"c12e01f2a13ff5587e1e9e4aedb8242d"}} 
+ 2023-05-17 11:21:40.556 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:40.714 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"c12e01f2a13ff5587e1e9e4aedb8242d"}} 
+ 2023-05-17 11:21:40.717 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:40.913 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"c12e01f2a13ff5587e1e9e4aedb8242d"}} 
+ 2023-05-17 11:21:40.916 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:21:41.092 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"c12e01f2a13ff5587e1e9e4aedb8242d"}} 
+ 2023-05-17 11:21:41.095 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 11:24:42.467 [INFO] [-] c.z.h.HikariDataSource.java:350 : system-manage - Shutdown initiated... 
+ 2023-05-17 11:24:42.471 [INFO] [-] c.z.h.HikariDataSource.java:352 : system-manage - Shutdown completed. 
+ 2023-05-17 15:58:31.191 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 3716 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 15:58:31.196 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 15:58:31.800 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 15:58:31.803 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 15:58:31.833 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 15:58:32.064 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 15:58:32.065 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 15:58:32.066 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 15:58:32.067 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 15:58:32.069 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 15:58:32.069 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 15:58:32.069 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 15:58:32.069 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 15:58:32.069 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 15:58:32.331 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 15:58:32.382 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 15:58:32.388 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@6003ad65 with name: encryptablePropertyResolver 
+ 2023-05-17 15:58:32.523 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 15:58:32.530 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 15:58:32.530 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 15:58:32.530 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 15:58:32.630 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 15:58:32.630 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1390 ms 
+ 2023-05-17 15:58:33.381 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 15:58:33.808 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 15:58:33.816 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 15:58:33.817 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 15:58:33.818 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 15:58:33.818 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 15:58:33.818 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 15:58:33.818 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 15:58:33.825 [INFO] [-] c.a.Application.java:61 : Started Application in 3.179 seconds (JVM running for 3.744) 
+ 2023-05-17 15:59:10.793 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 15:59:10.793 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 15:59:10.795 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 2 ms 
+ 2023-05-17 15:59:10.932 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:10.971 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 15:59:11.104 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 15:59:11.149 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:11.150 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:11.153 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:11.348 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:11.351 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:11.514 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:11.517 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:35.025 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:35.030 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:35.659 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:35.662 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:35.885 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:35.887 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:36.066 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 15:59:36.070 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:40.199 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"95d735879f0660d7626cccff063f803a"}} 
+ 2023-05-17 15:59:40.203 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 15:59:40.686 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"95d735879f0660d7626cccff063f803a"}} 
+ 2023-05-17 15:59:40.689 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:35.915 [INFO] [-] c.a.Application.java:55 : Starting Application using Java 19.0.2 on LAPTOP-U3OCAKVU with PID 24024 (C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8\beloved-town-server\target\classes started by 86139 in C:\Users\86139\Desktop\core\fd9d3b0c31ef8a0dc4111dc70dfc3496_8_8) 
+ 2023-05-17 20:40:35.917 [INFO] [-] c.a.Application.java:640 : The following 1 profile is active: "dev" 
+ 2023-05-17 20:40:36.401 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:262 : Multiple Spring Data modules found, entering strict repository configuration mode 
+ 2023-05-17 20:40:36.403 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:132 : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+ 2023-05-17 20:40:36.423 [INFO] [-] o.s.d.r.c.RepositoryConfigurationDelegate.java:201 : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces. 
+ 2023-05-17 20:40:36.606 [INFO] [-] c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor.java:40 : Post-processing PropertySource instances 
+ 2023-05-17 20:40:36.607 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 20:40:36.608 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 20:40:36.608 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 20:40:36.608 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 20:40:36.610 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper 
+ 2023-05-17 20:40:36.610 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+ 2023-05-17 20:40:36.610 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 20:40:36.610 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 20:40:36.902 [INFO] [-] c.u.j.f.DefaultLazyPropertyFilter.java:31 : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+ 2023-05-17 20:40:36.952 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 20:40:36.957 [INFO] [-] c.u.j.r.DefaultLazyPropertyResolver.java:30 : Found Custom Resolver Bean com.antlord.config.JasyptConfig@5f366587 with name: encryptablePropertyResolver 
+ 2023-05-17 20:40:37.079 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:108 : Tomcat initialized with port(s): 8081 (http) 
+ 2023-05-17 20:40:37.086 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Initializing ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 20:40:37.087 [INFO] [-] o.a.c.c.StandardService.java:173 : Starting service [Tomcat] 
+ 2023-05-17 20:40:37.087 [INFO] [-] o.a.c.c.StandardEngine.java:173 : Starting Servlet engine: [Apache Tomcat/9.0.64] 
+ 2023-05-17 20:40:37.190 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring embedded WebApplicationContext 
+ 2023-05-17 20:40:37.190 [INFO] [-] o.s.b.w.s.c.ServletWebServerApplicationContext.java:292 : Root WebApplicationContext: initialization completed in 1246 ms 
+ 2023-05-17 20:40:37.951 [INFO] [-] c.a.c.ElasticSearchClientConfig.java:72 : es服务器:10.97.1.1:31022/elastic/szwg%2021 已连接 
+ 2023-05-17 20:40:38.398 [INFO] [-] o.a.c.h.Http11NioProtocol.java:173 : Starting ProtocolHandler ["http-nio-8081"] 
+ 2023-05-17 20:40:38.407 [INFO] [-] o.s.b.w.e.t.TomcatWebServer.java:220 : Tomcat started on port(s): 8081 (http) with context path '' 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.RefreshScopeRefreshedEventListener.java:47 : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemProperties refreshed 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source systemEnvironment refreshed 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source random refreshed 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application-dev.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 20:40:38.408 [INFO] [-] c.u.j.c.CachingDelegateEncryptablePropertySource.java:55 : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed 
+ 2023-05-17 20:40:38.409 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+ 2023-05-17 20:40:38.409 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource 
+ 2023-05-17 20:40:38.409 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:76 : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource 
+ 2023-05-17 20:40:38.409 [INFO] [-] c.u.j.EncryptablePropertySourceConverter.java:81 : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper 
+ 2023-05-17 20:40:38.419 [INFO] [-] c.a.Application.java:61 : Started Application in 2.938 seconds (JVM running for 3.557) 
+ 2023-05-17 20:40:54.702 [INFO] [-] o.a.c.c.C.[.[.[/].java:173 : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+ 2023-05-17 20:40:54.703 [INFO] [-] o.s.w.s.DispatcherServlet.java:525 : Initializing Servlet 'dispatcherServlet' 
+ 2023-05-17 20:40:54.704 [INFO] [-] o.s.w.s.DispatcherServlet.java:547 : Completed initialization in 1 ms 
+ 2023-05-17 20:40:54.858 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:54.891 [INFO] [-] c.z.h.HikariDataSource.java:110 : system-manage - Starting... 
+ 2023-05-17 20:40:55.037 [INFO] [-] c.z.h.HikariDataSource.java:123 : system-manage - Start completed. 
+ 2023-05-17 20:40:55.087 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:55.177 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:55.180 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:55.358 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:55.361 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:55.539 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:55.542 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:55.773 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:55.776 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:55.966 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:55.970 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:56.156 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:56.160 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:56.328 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:56.331 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:56.506 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:56.510 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:40:56.697 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:40:56.699 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:43:00.462 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:43:00.467 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:43:00.651 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:43:00.654 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:43:00.824 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:43:00.828 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:43:01.067 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:43:01.069 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:43:01.266 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:43:01.271 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:48:55.494 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:48:55.499 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:48:55.666 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:48:55.670 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:49:00.828 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:49:00.831 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:49:01.168 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:49:01.171 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:49:01.353 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:49:01.356 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:49:01.532 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:49:01.535 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:05.374 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:05.377 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:05.531 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:05.535 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:05.724 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:05.727 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:05.896 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:05.899 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:06.071 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:06.073 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:06.243 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:06.246 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:50:06.442 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:50:06.444 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:00.331 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:00.334 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 20:51:01.058 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"超级管理员","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:01.062 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000003","msg":"账号不存在"} 
+ 2023-05-17 20:51:06.986 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:06.988 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:07.431 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:07.435 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:07.609 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:07.612 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:07.796 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"14e1b600b1fd579f47433b88e8d85291"}} 
+ 2023-05-17 20:51:07.798 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:24.547 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"cfcd208495d565ef66e7dff9f98764da"}} 
+ 2023-05-17 20:51:24.550 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:25.113 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"cfcd208495d565ef66e7dff9f98764da"}} 
+ 2023-05-17 20:51:25.116 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:25.293 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"cfcd208495d565ef66e7dff9f98764da"}} 
+ 2023-05-17 20:51:25.296 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:25.482 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"cfcd208495d565ef66e7dff9f98764da"}} 
+ 2023-05-17 20:51:25.485 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:57.211 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:51:57.216 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:57.775 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:51:57.777 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:57.968 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:51:57.970 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:58.172 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:51:58.175 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:51:58.373 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:51:58.376 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:04.839 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:52:04.843 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:05.033 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:52:05.035 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:11.216 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:52:11.220 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:12.003 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:52:12.005 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:12.204 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"302ff00ddb9cb45c970a316e5212bb34"}} 
+ 2023-05-17 20:52:12.208 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:16.120 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"202cb962ac59075b964b07152d234b70"}} 
+ 2023-05-17 20:52:16.123 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:18.528 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"81dc9bdb52d04dc20036dbd8313ed055"}} 
+ 2023-05-17 20:52:18.531 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:18.794 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"81dc9bdb52d04dc20036dbd8313ed055"}} 
+ 2023-05-17 20:52:18.796 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:20.116 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"81dc9bdb52d04dc20036dbd8313ed055"}} 
+ 2023-05-17 20:52:20.119 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:21.706 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"827ccb0eea8a706c4c34a16891f84e7b"}} 
+ 2023-05-17 20:52:21.709 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:21.932 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"827ccb0eea8a706c4c34a16891f84e7b"}} 
+ 2023-05-17 20:52:21.934 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:50.119 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"827ccb0eea8a706c4c34a16891f84e7b"}} 
+ 2023-05-17 20:52:50.123 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:50.308 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"827ccb0eea8a706c4c34a16891f84e7b"}} 
+ 2023-05-17 20:52:50.312 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:52:50.736 [INFO] [-] c.a.aop.LogAspect.java:78 : 〓〓〓〓〓〓〓〓〓〓    ■ [uri] : /user/login   ■ [param] : {"param":{"accountName":"admin","password":"827ccb0eea8a706c4c34a16891f84e7b"}} 
+ 2023-05-17 20:52:50.739 [INFO] [-] c.a.aop.LogAspect.java:98 : ■ ■ ■ ■ ■ ■ ■ ■ ■ ■    ■ [uri] : /user/login   ■ [result] : {"code":"000004","msg":"密码错误"} 
+ 2023-05-17 20:54:35.375 [INFO] [-] c.z.h.HikariDataSource.java:350 : system-manage - Shutdown initiated... 
+ 2023-05-17 20:54:35.381 [INFO] [-] c.z.h.HikariDataSource.java:352 : system-manage - Shutdown completed. 
+ 

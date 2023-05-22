@@ -1,0 +1,17 @@
+2023-05-17 00:53:34.410 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 00:54:06.223 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 01:01:49.731 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 01:02:13.739 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 08:31:08.311 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 08:32:15.121 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 09:53:44.443 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 11:18:27.149 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 11:18:38.563 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 11:19:04.376 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 11:20:07.483 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 11:20:23.187 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 15:58:33.827 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 15:59:10.970 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 2023-05-17 20:40:38.421 [WARN] [-] c.a.Application.java:15 : ================美甲试戴启动成功=============== 
+ 2023-05-17 20:40:54.891 [WARN] [-] c.z.h.HikariConfig.java:1084 : system-manage - idleTimeout is close to or more than maxLifetime, disabling it. 
+ 
